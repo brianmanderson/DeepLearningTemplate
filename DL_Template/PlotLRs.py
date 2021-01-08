@@ -1,7 +1,7 @@
 __author__ = 'Brian M Anderson'
 # Created on 11/24/2020
 from Base_Deeplearning_Code.Finding_Optimization_Parameters.LR_Finder import make_plot, os
-from .ReturnPaths import return_paths
+from DL_Template.ReturnPaths import return_paths
 import pandas as pd
 
 

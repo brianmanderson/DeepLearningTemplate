@@ -1,12 +1,12 @@
 __author__ = 'Brian M Anderson'
 # Created on 11/28/2020
-from .ReturnHparameters import return_list_of_models
-from .ReturnCosineLoss import CosineLoss
-from .ReturnGenerators import return_generators, return_paths
+from DL_Template.ReturnHparameters import return_list_of_models
+from DL_Template.ReturnCosineLoss import CosineLoss
+from DL_Template.ReturnGenerators import return_generators, return_paths
 from Base_Deeplearning_Code.Finding_Optimization_Parameters.HyperParameters import is_df_within_another, return_hparams
-from .RunModel import run_model
+from DL_Template.RunModel import run_model
 import os
-from .ReturnModels import return_model
+from DL_Template.ReturnModels import return_model
 import pandas as pd
 import tensorflow as tf
 import types

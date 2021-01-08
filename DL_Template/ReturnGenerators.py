@@ -1,6 +1,6 @@
 __author__ = 'Brian M Anderson'
 # Created on 11/18/2020
-from .ReturnPaths import return_paths, os
+from DL_Template.ReturnPaths import return_paths, os
 from Base_Deeplearning_Code.Data_Generators.TFRecord_to_Dataset_Generator import DataGeneratorClass
 from Base_Deeplearning_Code.Data_Generators.Image_Processors_Module.Image_Processors_DataSet import *
 

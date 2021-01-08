@@ -1,7 +1,7 @@
 __author__ = 'Brian M Anderson'
 # Created on 11/24/2020
-from .DenseNetModel.MyDenseNet import MyDenseNet121
-from .DenseNetModel.My3DDenseNet import mydensenet
+from DL_Template.DenseNetModel.MyDenseNet import MyDenseNet121
+from DL_Template.DenseNetModel.My3DDenseNet import mydensenet
 
 
 def return_model(model_key=0):

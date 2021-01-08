@@ -5,9 +5,9 @@ from Base_Deeplearning_Code.Plot_And_Scroll_Images.Plot_Scroll_Images import plo
 from Base_Deeplearning_Code.Finding_Optimization_Parameters.LR_Finder import LearningRateFinder
 from Base_Deeplearning_Code.Finding_Optimization_Parameters.HyperParameters import is_df_within_another
 from tensorflow.keras.callbacks import TensorBoard
-from .ReturnCosineLoss import CosineLoss
-from .ReturnGenerators import return_generators, return_paths
-from .ReturnModels import return_model
+from DL_Template.ReturnCosineLoss import CosineLoss
+from DL_Template.ReturnGenerators import return_generators, return_paths
+from DL_Template.ReturnModels import return_model
 import os
 import pandas as pd
 import types
