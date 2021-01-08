@@ -1,8 +1,8 @@
 __author__ = 'Brian M Anderson'
 # Created on 12/8/2020
-from Deep_Learning.Base_Deeplearning_Code.Finding_Optimization_Parameters.History_Plotter_TF2 import np, \
+from Base_Deeplearning_Code.Finding_Optimization_Parameters.History_Plotter_TF2 import np, \
     iterate_paths_add_to_dictionary
-from Local_Recurrence_Work.Outcome_Analysis.DeepLearningTools.ReturnPaths import return_paths
+from .ReturnPaths import return_paths
 import pandas as pd
 import os
 

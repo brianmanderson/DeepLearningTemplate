@@ -3,7 +3,7 @@ __author__ = 'Brian M Anderson'
 import pandas as pd
 import numpy as np
 import os
-from Local_Recurrence_Work.Outcome_Analysis.DeepLearningTools.ReturnPaths import return_paths
+from .ReturnPaths import return_paths
 
 
 def add_mean_std_across_cv_groups():

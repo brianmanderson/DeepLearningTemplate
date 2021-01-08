@@ -1,6 +1,6 @@
 __author__ = 'Brian M Anderson'
 # Created on 11/28/2020
-from Deep_Learning.Base_Deeplearning_Code.Finding_Optimization_Parameters.HyperParameters import OrderedDict
+from Base_Deeplearning_Code.Finding_Optimization_Parameters.HyperParameters import OrderedDict
 
 
 def return_list_of_models(model_key=0):

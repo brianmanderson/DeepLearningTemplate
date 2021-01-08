@@ -1,9 +1,9 @@
 __author__ = 'Brian M Anderson'
 # Created on 11/18/2020
 
-from Local_Recurrence_Work.Outcome_Analysis.DeepLearningTools.ReturnGenerators import return_paths, return_generators, plot_scroll_Image
-from Local_Recurrence_Work.Outcome_Analysis.DeepLearningTools.ReturnCosineLoss import CosineLoss, cosine_loss
-from Local_Recurrence_Work.Outcome_Analysis.DeepLearningTools.ReturnModels import return_model
+from .ReturnGenerators import return_paths, return_generators, plot_scroll_Image
+from .ReturnCosineLoss import CosineLoss, cosine_loss
+from .ReturnModels import return_model
 import tensorflow as tf
 import os
 import numpy as np

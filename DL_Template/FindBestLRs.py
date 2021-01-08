@@ -1,13 +1,13 @@
 __author__ = 'Brian M Anderson'
 # Created on 11/24/2020
 import tensorflow as tf
-from Deep_Learning.Base_Deeplearning_Code.Plot_And_Scroll_Images.Plot_Scroll_Images import plot_scroll_Image
-from Deep_Learning.Base_Deeplearning_Code.Finding_Optimization_Parameters.LR_Finder import LearningRateFinder
-from Deep_Learning.Base_Deeplearning_Code.Finding_Optimization_Parameters.HyperParameters import is_df_within_another
+from Base_Deeplearning_Code.Plot_And_Scroll_Images.Plot_Scroll_Images import plot_scroll_Image
+from Base_Deeplearning_Code.Finding_Optimization_Parameters.LR_Finder import LearningRateFinder
+from Base_Deeplearning_Code.Finding_Optimization_Parameters.HyperParameters import is_df_within_another
 from tensorflow.keras.callbacks import TensorBoard
-from Local_Recurrence_Work.Outcome_Analysis.DeepLearningTools.ReturnCosineLoss import CosineLoss
-from Local_Recurrence_Work.Outcome_Analysis.DeepLearningTools.ReturnGenerators import return_generators, return_paths
-from Local_Recurrence_Work.Outcome_Analysis.DeepLearningTools.ReturnModels import return_model
+from .ReturnCosineLoss import CosineLoss
+from .ReturnGenerators import return_generators, return_paths
+from .ReturnModels import return_model
 import os
 import pandas as pd
 import types

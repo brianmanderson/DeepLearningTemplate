@@ -1,8 +1,8 @@
 __author__ = 'Brian M Anderson'
 # Created on 11/24/2020
 import tensorflow as tf
-from Deep_Learning.Base_Deeplearning_Code.Cyclical_Learning_Rate.clr_callback_TF2 import SGDRScheduler
-from Deep_Learning.Base_Deeplearning_Code.Callbacks.TF2_Callbacks import Add_Images_and_LR
+from Base_Deeplearning_Code.Cyclical_Learning_Rate.clr_callback_TF2 import SGDRScheduler
+from Base_Deeplearning_Code.Callbacks.TF2_Callbacks import Add_Images_and_LR
 import os
 from tensorboard.plugins.hparams.keras import Callback
 
