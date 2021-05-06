@@ -2,8 +2,8 @@ __author__ = 'Brian M Anderson'
 # Created on 11/18/2020
 
 from Base_Deeplearning_Code.Make_Single_Images.Make_TFRecord_Class import write_tf_record
-from Base_Deeplearning_Code.Make_Single_Images.Image_Processors_Module.Image_Processors_TFRecord import *
-
+from Base_Deeplearning_Code.Image_Processors_Module.src.Processors import MakeTFRecordProcessors as Processors
+Processors.LoadNifti(nifti_path_keys=('image_path', 'annotation_path'), out_keys=('image_handle', 'annotation_handle'))
 
 def path_parser(niftii_path, **kwargs):
     data_dict = {}
@@ -39,7 +39,7 @@ def nifti_to_records(nifti_path):
                                  'secondary_mask'),
                   desired_output_spacing=(1., 1., 2.5),
                   resample_interpolators=('Linear', 'Linear', 'Linear', 'Nearest', 'Nearest')),
-        Threshold_Images(image_key='primary_image', lower_bound=-200, upper_bound=200, divide=False),
+        Processors.Threshold_Images(image_keys=('image_array',), lower_bound=-100, upper_bound=200),
         Threshold_Images(image_key='secondary_image', lower_bound=-200, upper_bound=200, divide=False),
         Threshold_Images(image_key='secondary_image_deformed', lower_bound=-200, upper_bound=200, divide=False),
         Normalize_to_annotation(image_key='primary_image', annotation_key='primary_mask',
